@@ -1,13 +1,181 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.navbar {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: block;
+  gap: 1rem;
+  padding-left: 10px;
+  /* text-align: center; */
+  padding-top: 8px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.link {
+  color: var(--grey-500);
+  text-decoration: none;
+  /* padding-top: 8px; */
+  width: 4vw;
+  height: 25px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.active {
+  text-decoration: none;
+  /* padding-top: 8px; */
+  background: #e76f51;
+  width: 4vw;
+  height: 25px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.login {
+  margin-top: 50px;
+  width: 20vw;
+  height: 34vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login > h2 {
+  padding-left: 120px;
+}
+
+.form-row {
+  padding-left: 60px;
+}
+
+input {
+  border-radius: 5px;
+  border: #2646539d solid 1px;
+  padding-left: 3px;
+}
+
+.btn-submit {
+  /* background: #000080; */
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  border-radius: 5px;
+  border: none;
+  width: 4vw;
+  height: 3vh;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.btn-add {
+  border-radius: 5px;
+  border: none;
+  background-color: #264653;
+  color: white;
+  width: 5vw;
+  height: 4vh;
+  margin-left: 140px;
+}
+
+.form-dashbord {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  row-gap: 16px;
+  padding: 30px;
+}
+
+.info,
+.back {
+  text-decoration: none;
+}
+
+img {
+  width: 50%;
+  height: 50vh;
+  /* padding-top: 20px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover; /* crop center */
+}
+
+.label-product {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 50px 10px;
+  column-gap: 16px;
+  row-gap: 16px;
+  padding-left: 35px;
+}
+
+ul {
+  padding-top: 10px;
+}
+
+li {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 50px 10px;
+  column-gap: 16px;
+  row-gap: 16px;
+  padding-top: 10px;
+  /* padding-left: 30px; */
+}
+
+select {
+  border-radius: 5px;
+  border: #2646539d solid 1px;
+}
+
+.show-product {
+  padding-top: 60px;
+}
+
+.btn-edit {
+  width: 40px;
+  height: 20px;
+  font-size: 9px;
+  background: #f4a261;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.btn-del {
+  width: 40px;
+  height: 20px;
+  font-size: 10px;
+  background: #e76f51;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+img {
+  height: 10vh;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+span {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.form-Input {
+  padding-top: 10px;
+  margin-left: 20px;
 }
